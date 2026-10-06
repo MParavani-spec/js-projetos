@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meus exercícios JavaScript</title>
+
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Meus exercícios JavaScript</h1>
+        <p>Aprendendo HTML, CSS e JavaScript</p>
+    </header>
+
+
+    <main>
+
+        <section class="exercicio">
+            <h2>Verificador de idade</h2>
+
+            <div class="caixa">
+
+                <h3>Quantos anos você tem?</h3>
+
+                <input
+                    type="number"
+                    name="idade"
+                    id="idade"
+                    min="0"
+                    step="1"
+                    placeholder="Digite sua idade"
+                >
+
+                <div class="caixasex">
+                    <h4>Qual o seu sexo?</h4>
+                        <input type="radio" name="rad" id="masc" checked>
+                        <label for="masc">Masculino</label>
+                        <input type="radio" name="rad" id="fem">
+                        <label for="fem">Feminino</label>
+                        <input type="radio" name="rad" id="alt">
+                        <label for="alt">Outro</label>
+                </div>
+
+                <button id="Confirmar">Confirmar</button>
+
+                <p id="resultado">Prencha os dados acima para ver o resultado</p>
+                <p id="ressex"></p>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>&copy; 2026 - Meus exercícios</p>
+    </footer>
+
+
+    <script src="ex.js"></script>
+
+</body>
+
+</html>
