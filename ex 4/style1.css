@@ -1,0 +1,243 @@
+/* Tirando algumas configurações padrão do navegador */
+:root {
+    --Cabe: #0d47a1;
+    --BordaA: #1976d2;
+    --Fundo: #1565c0;
+    --CabeErro: #950000;
+    --BordaErro: #D50000;
+    --FundoErro: #BB0000; 
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Corpo da página */
+
+body {
+    background-color: #1e1e1e;
+    color: white;
+
+    font-family: Arial, sans-serif;
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Cabeçalho */
+
+header {
+    background-color: var(--Cabe);
+
+    text-align: center;
+
+    padding: 30px;
+    border-bottom: 4px solid var(--BordaA);
+}
+
+header.erro {
+    background-color: var(--CabeErro);
+
+    text-align: center;
+
+    padding: 30px;
+    border-bottom: 4px solid var(--BordaErro);
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #dbeafe;
+}
+
+
+/* Conteúdo principal */
+
+main {
+    width: 90%;
+    max-width: 900px;
+
+    margin: 30px auto;
+
+    flex: 1;
+}
+
+
+/* Área do exercício */
+
+.exercicio {
+    background-color: #eeeeee;
+    color: #222;
+
+    border: 4px solid var(--Fundo);
+    border-radius: 10px;
+
+    padding: 25px;
+}
+
+.exercicio.erro {
+    border: 4px solid var(--FundoErro);
+}
+
+.exercicio.erro h2 {
+    background-color: var(--FundoErro);
+}
+
+.exercicio h2 {
+    text-align: center;
+
+    background-color: var(--Fundo);
+    color: white;
+
+    padding: 12px;
+
+    margin-bottom: 25px;
+}
+
+
+/* Caixa onde ficará seu código */
+
+.caixa {
+    background-color: white;
+
+    border: 2px solid #999;
+    border-radius: 10px;
+
+    padding: 30px;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixasex, label{
+    padding: 10px;
+    
+}
+
+h4 {
+    margin-bottom: 12px;
+}
+
+
+/* Título do exercício */
+
+.caixa h3 {
+    margin-bottom: 20px;
+}
+
+/* Select */
+
+select {
+    margin-top: 12px;
+}
+
+/* Input */
+
+.numeros {
+    padding: 8px;
+
+    font-size: 14px;
+
+    width: 150px;
+
+    border: 2px solid #999;
+    border-radius: 5px;
+}
+
+
+/* Botão */
+
+#Validar {
+    padding: 6px 12px;
+
+    margin-top: 12px;
+
+    font-size: 14px;
+
+    background-color: var(--Fundo);
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+#Contar.erro {
+    background-color: var(--FundoErro);
+}
+
+#Contar:hover {
+    background-color: var(--Cabe);
+}
+
+#Contar.erro:hover {
+    background-color: var(--CabeErro);
+}
+
+
+/* Resultado do JavaScript */
+
+#resultado {
+    margin-top: 25px;
+
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#ressex {
+    padding: 10px;
+}
+
+#foto {
+    width: 40rem;
+    height: 20rem;
+
+    border-radius: 12px;
+    border: #999 4px solid;
+
+    margin-top: 10px;
+}
+
+
+/* Rodapé */
+
+footer {
+    background-color: var(--Cabe);
+
+    text-align: center;
+
+    padding: 20px;
+
+    border-top: 4px solid var(--BordaA);
+}
+
+footer.erro {
+    background-color: var(--CabeErro);
+    border-top: 4px solid var(--BordaErro);
+}
+
+@media screen and (max-width: 600px) {
+    #foto {
+        width: 90%;
+        height: auto;
+        aspect-ratio: 2/1;
+
+        border-radius: 8px;
+        border: #999 3px solid;
+
+        margin-top: 10px;
+    }
+}
